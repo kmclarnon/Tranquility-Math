@@ -1,3 +1,5 @@
+#ifndef _TRANQUILITY_MATH_TFLOAT_H_
+#define _TRANQUILITY_MATH_TFLOAT_H_
 /*
 The MIT License (MIT)
 
@@ -23,110 +25,68 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _TRANQUILITY_MATH_TFLOAT_H_
-#define _TRANQUILITY_MATH_TFLOAT_H_
-
 #define FLOAT_EPSILON 0.00001f
 
 namespace Tranquility
 {
-	namespace Math
-	{
-		class Float
-		{
-		public:
-			float val;
+    namespace Math
+    {
+        class Float
+        {
+        public:
+            float val;
 
-			Float(float val);
-			Float();
+            Float(float val);
+            Float();
 
-			Float& operator=(const Float& rhs);
+            Float& operator=(const Float& rhs);
+            Float& operator=(const float rhs);
+            Float& operator=(const int rhs);
 
-			Float& operator=(const float rhs);
+            Float operator+(const Float& rhs)   const;
+            Float operator+(const float rhs)    const;
+            Float operator+(const int rhs)      const;
+            Float operator-(void)               const;
+            Float operator-(const Float& rhs)   const;
+            Float operator-(const float rhs)    const;
+            Float operator-(const int rhs)      const;
+            Float operator*(const Float& rhs)   const;
+            Float operator*(const float rhs)    const;
+            Float operator*(const int rhs)      const;
+            Float operator/(const Float& rhs)   const;
+            Float operator/(const float rhs)    const;
+            Float operator/(const int rhs)      const;
 
-			Float& operator=(const int rhs);
+            Float& operator+=(const Float& rhs);
+            Float& operator+=(const float rhs);
+            Float& operator+=(const int rhs);
+            Float& operator-=(const Float& rhs);
+            Float& operator-=(const float rhs);
+            Float& operator-=(const int rhs);
+            Float& operator*=(const Float& rhs);
+            Float& operator*=(const float rhs);
+            Float& operator*=(const int rhs);
+            Float& operator/=(const Float& rhs);
+            Float& operator/=(const float rhs);
+            Float& operator/=(const int rhs);
 
-			Float operator+(const Float& rhs) const;
-
-			Float operator+(const float rhs) const;
-
-			Float operator+(const int rhs) const;
-
-			Float operator-(void) const;
-
-			Float operator-(const Float& rhs) const;
-
-			Float operator-(const float rhs) const;
-
-			Float operator-(const int rhs) const;
-
-			Float operator*(const Float& rhs) const;
-
-			Float operator*(const float rhs) const;
-
-			Float operator*(const int rhs) const;
-
-			Float operator/(const Float& rhs) const;
-
-			Float operator/(const float rhs) const;
-
-			Float operator/(const int rhs) const;
-
-			Float& operator+=(const Float& rhs);
-
-			Float& operator+=(const float rhs);
-
-			Float& operator+=(const int rhs);
-
-			Float& operator-=(const Float& rhs);
-
-			Float& operator-=(const float rhs);
-
-			Float& operator-=(const int rhs);
-
-			Float& operator*=(const Float& rhs);
-
-			Float& operator*=(const float rhs);
-
-			Float& operator*=(const int rhs);
-
-			Float& operator/=(const Float& rhs);
-
-			Float& operator/=(const float rhs);
-
-			Float& operator/=(const int rhs);
-
-			bool operator==(const Float& rhs) const;
-
-			bool operator==(const float rhs) const;
-
-			bool operator==(const int rhs) const;
-
-			bool operator<(const Float& rhs) const;
-
-			bool operator<(const float rhs) const;
-
-			bool operator<(const int rhs) const;
-
-			bool operator>(const Float& rhs) const;
-
-			bool operator>(const float rhs) const;
-
-			bool operator>(const int rhs) const;
-
-			bool operator<=(const Float& rhs) const;
-
-			bool operator<=(const float rhs) const;
-
-			bool operator<=(const int rhs) const;
-
-			bool operator>=(const Float& rhs) const;
-
-			bool operator>=(const float rhs) const;
-
-			bool operator>=(const int rhs) const;
-		};
-	}
+            bool operator==(const Float& rhs)   const;
+            bool operator==(const float rhs)    const;
+            bool operator==(const int rhs)      const;
+            bool operator<(const Float& rhs)    const;
+            bool operator<(const float rhs)     const;
+            bool operator<(const int rhs)       const;
+            bool operator>(const Float& rhs)    const;
+            bool operator>(const float rhs)     const;
+            bool operator>(const int rhs)       const;
+            bool operator<=(const Float& rhs)   const;
+            bool operator<=(const float rhs)    const;
+            bool operator<=(const int rhs)      const;
+            bool operator>=(const Float& rhs)   const;
+            bool operator>=(const float rhs)    const;
+            bool operator>=(const int rhs)      const;
+        };
+    }
 }
 
 #endif

@@ -16,6 +16,7 @@
     <ClCompile Include="Source\Point3D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Include\Dual.h" />
     <ClInclude Include="Include\Float.h" />
     <ClInclude Include="Include\Point2D.h" />
     <ClInclude Include="Include\Point3D.h" />

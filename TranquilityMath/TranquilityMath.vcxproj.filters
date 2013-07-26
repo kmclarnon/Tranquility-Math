@@ -31,5 +31,8 @@
     <ClInclude Include="Include\Point3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Dual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

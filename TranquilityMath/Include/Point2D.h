@@ -1,3 +1,5 @@
+#ifndef _TRANQUILITY_MATH_POINT_2D_H_
+#define _TRANQUILITY_MATH_POINT_2D_H_
 /*
 The MIT License (MIT)
 
@@ -23,9 +25,6 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _TRANQUILITY_MATH_POINT_2D_H_
-#define _TRANQUILITY_MATH_POINT_2D_H_
-
 #include "Float.h"
 
 namespace Tranquility
@@ -43,28 +42,19 @@ namespace Tranquility
 
 			Point2D& operator=(const Point2D& rhs);
 
-			Point2D operator+(const Point2D& rhs) const;
+			Point2D operator+(const Point2D& rhs)   const;
+			Point2D operator-(const Point2D& rhs)   const;
+			Point2D operator-(void)                 const;
+			Point2D operator*(const Point2D& rhs)   const;
+			Point2D operator*(const Float& rhs)     const;
+			Point2D operator/(const Point2D& rhs)   const;
+			Point2D operator/(const Float& rhs)     const;
 
-			Point2D operator-(const Point2D& rhs) const;
-
-			Point2D operator-(void) const;
-
-			Point2D operator*(const Point2D& rhs) const;
-
-			Point2D operator*(const Float& rhs) const;
-
-			Point2D operator/(const Point2D& rhs) const;
-
-			Point2D operator/(const Float& rhs) const;
-
-			bool operator==(const Point2D& rhs) const;
+			bool operator==(const Point2D& rhs)     const;
 
 			Point2D& operator+=(const Point2D& rhs);
-
 			Point2D& operator-=(const Point2D& rhs);
-
 			Point2D& operator*=(const Point2D& rhs);
-
 			Point2D& operator/=(const Point2D& rhs);
 		};
 	}
