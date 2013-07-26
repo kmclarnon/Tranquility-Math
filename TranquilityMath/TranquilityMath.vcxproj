@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Dual.cpp" />
     <ClCompile Include="Source\Float.cpp" />
     <ClCompile Include="Source\Point2D.cpp" />
     <ClCompile Include="Source\Point3D.cpp" />

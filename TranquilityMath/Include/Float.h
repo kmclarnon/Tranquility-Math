@@ -25,6 +25,8 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+#include <cmath>
+
 #define FLOAT_EPSILON 0.00001f
 
 namespace Tranquility
@@ -39,6 +41,7 @@ namespace Tranquility
             Float(float val);
             Float();
 
+            // Operators
             Float& operator=(const Float& rhs);
             Float& operator=(const float rhs);
             Float& operator=(const int rhs);
@@ -56,6 +59,9 @@ namespace Tranquility
             Float operator/(const Float& rhs)   const;
             Float operator/(const float rhs)    const;
             Float operator/(const int rhs)      const;
+            Float operator^(const Float& rhs)   const;
+            Float operator^(const float rhs)    const;
+            Float operator^(const int rhs)      const;
 
             Float& operator+=(const Float& rhs);
             Float& operator+=(const float rhs);
