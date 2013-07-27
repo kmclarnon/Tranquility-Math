@@ -3,9 +3,9 @@ Tranquility-Math
 
 Math library for the Tranquility Engine
 
-This library will contain all math functions and structures to support those functions that will be required by the Tranquility Engine
+This library will contain all math functions and structures to support those functions that will be required by the Tranquility Engine  
 
-Current Features
+Current Features  
 ----------------
 While the library is still under construction, there are a few features already implemented
 ### Basic Types
@@ -34,3 +34,8 @@ To-Do List
   * Normalized quaternion linear interpolation
   * Exponential map interpolation
 
+More as needed
+
+### Implementation
+* SSE4 support (potentially earlier versions as well)
+* 
