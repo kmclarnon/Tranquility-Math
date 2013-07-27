@@ -26,10 +26,10 @@ To-Do List
 * **Quaternion:** a generic representation of a quaternion
 
 ### Functions
-* Addition
-* Subtraction
-* Inversion
-* Quaternion Interpolation (see [this](http://number-none.com/product/Understanding%20Slerp,%20Then%20Not%20Using%20It/) for a reference on interpolation types)
+* **Addition**
+* **Subtraction**
+* **Inversion**
+* **Quaternion Interpolation** (see [this](http://number-none.com/product/Understanding%20Slerp,%20Then%20Not%20Using%20It/) for a reference on interpolation types)
   * Spherical linear interpolation
   * Normalized quaternion linear interpolation
   * Exponential map interpolation
@@ -38,4 +38,3 @@ More as needed
 
 ### Implementation
 * SSE4 support (potentially earlier versions as well)
-* 
