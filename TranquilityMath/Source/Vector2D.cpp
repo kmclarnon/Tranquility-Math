@@ -68,9 +68,19 @@ namespace Tranquility
             return Vector2D(x * rhs.x, y * rhs.y);
         }
 
+        Vector2D Vector2D::operator*(const Float& rhs) const
+        {
+            return Vector2D(x * rhs, y * rhs);
+        }
+
         Vector2D Vector2D::operator/(const Vector2D& rhs) const
         {
             return Vector2D(x / rhs.x, y / rhs.y);
+        }
+
+        Vector2D Vector2D::operator/(const Float& rhs) const
+        {
+            return Vector2D(x / rhs, y / rhs);
         }
 
         Vector2D& Vector2D::operator+=(const Vector2D& rhs)

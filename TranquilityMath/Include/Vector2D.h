@@ -54,7 +54,9 @@ namespace Tranquility
             Vector2D operator+(const Vector2D& rhs) const;
             Vector2D operator-(const Vector2D& rhs) const;
             Vector2D operator*(const Vector2D& rhs) const;
+            Vector2D operator*(const Float& rhs) const;
             Vector2D operator/(const Vector2D& rhs) const;
+            Vector2D operator/(const Float& rhs) const;
 
             Vector2D& operator+=(const Vector2D& rhs);
             Vector2D& operator-=(const Vector2D& rhs);
