@@ -15,12 +15,14 @@
     <ClCompile Include="Source\Float.cpp" />
     <ClCompile Include="Source\Point2D.cpp" />
     <ClCompile Include="Source\Point3D.cpp" />
+    <ClCompile Include="Source\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Dual.h" />
     <ClInclude Include="Include\Float.h" />
     <ClInclude Include="Include\Point2D.h" />
     <ClInclude Include="Include\Point3D.h" />
+    <ClInclude Include="Include\Vector2D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5CE105CF-07F9-4BBF-9036-80ED402A9208}</ProjectGuid>
