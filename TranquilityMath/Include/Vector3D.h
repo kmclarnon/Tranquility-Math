@@ -48,13 +48,14 @@ namespace Tranquility
             Float magnitude() const;
             Float sqrMagnitude() const;
             Vector3D normalize() const;
+            Float dot(const Vector3D& v) const;
 
             // Operators
             Vector3D& operator=(const Vector3D& rhs);
             Vector3D& operator-(void);
 
-            bool operator==(const Vector3D& rhs)    const;
-            bool operator!=(const Vector3D& rhs)    const;
+            bool operator==(const Vector3D& rhs) const;
+            bool operator!=(const Vector3D& rhs) const;
 
             Vector3D operator+(const Vector3D& rhs) const;
             Vector3D operator-(const Vector3D& rhs) const;

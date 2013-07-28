@@ -52,6 +52,11 @@ namespace Tranquility
             return Vector2D(x / mag, y / mag);
         }
 
+        Float Vector2D::dot(const Vector2D& v) const
+        {
+            return (x * v.x + y * v.y);
+        }
+
         Vector2D& Vector2D::operator=(const Vector2D& rhs)
         {
             x = rhs.x;

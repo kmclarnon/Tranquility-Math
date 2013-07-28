@@ -48,6 +48,7 @@ namespace Tranquility
             Float magnitude() const;
             Float sqrMagnitude() const;
             Vector2D normalize() const;
+            Float dot(const Vector2D& v) const;
 
             // Operators
             Vector2D& operator=(const Vector2D& rhs);

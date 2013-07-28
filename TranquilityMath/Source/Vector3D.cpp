@@ -52,6 +52,11 @@ namespace Tranquility
             return Vector3D(x / mag, y / mag, z / mag);
         }
 
+        Float Vector3D::dot(const Vector3D& v) const
+        {
+            return (x * v.x + y * v.y + z * v.z);
+        }
+
         Vector3D& Vector3D::operator=(const Vector3D& rhs)
         {
             x = rhs.x;
