@@ -43,10 +43,6 @@ namespace Tranquility
             Float(float val);
             Float();
 
-            // Functions
-            Float sqrt() const;
-            Float sqr() const;
-
             // Operators
             Float& operator=(const Float& rhs);
             Float& operator=(const float rhs);

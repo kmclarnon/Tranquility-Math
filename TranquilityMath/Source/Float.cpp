@@ -34,16 +34,6 @@ namespace Tranquility
 		Float::Float(float val) : val(val) {}
 		Float::Float() : val(0.0f) {}
 
-        Float Float::sqrt() const
-        {
-            return Float(std::sqrt(val));
-        }
-
-        Float Float::sqr() const
-        {
-            return val * val;
-        }
-
 		Float& Float::operator=(const Float& rhs)
 		{
 			val = rhs.val;
