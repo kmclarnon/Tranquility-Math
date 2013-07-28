@@ -1,5 +1,5 @@
-#ifndef _TRANQUILITY_MATH_VECTOR2D_H_
-#define _TRANQUILITY_MATH_VECTOR2D_H_
+#ifndef _TRANQUILITY_MATH_VECTOR3D_H_
+#define _TRANQUILITY_MATH_VECTOR3D_H_
 /*
 The MIT License (MIT)
 
@@ -28,39 +28,40 @@ Author: Kevin McLarnon
 */
 
 #include "Float.h"
-#include "Point2D.h"
+#include "Point3D.h"
 
 namespace Tranquility
 {
     namespace Math
     {
-        class Vector2D
+        class Vector3D
         {
         public:
-            Float x, y;
+            Float x, y, z;
 
-            Vector2D(Float x, Float y);
-            Vector2D(Point2D p1, Point2D p2);
-            Vector2D(Point2D p);
-            Vector2D();
+            Vector3D(Float x, Float y, Float z);
+            Vector3D(Point3D p1, Point3D p2);
+            Vector3D(Point3D p);
+            Vector3D();
 
-            Vector2D& operator=(const Vector2D& rhs);
-            Vector2D& operator-(void);
+            Vector3D& operator=(const Vector3D& rhs);
+            Vector3D& operator-(void);
 
-            bool operator==(const Vector2D& rhs)    const;
-            bool operator!=(const Vector2D& rhs)    const;
+            bool operator==(const Vector3D& rhs)    const;
+            bool operator!=(const Vector3D& rhs)    const;
 
-            Vector2D operator+(const Vector2D& rhs) const;
-            Vector2D operator-(const Vector2D& rhs) const;
-            Vector2D operator*(const Vector2D& rhs) const;
-            Vector2D operator*(const Float& rhs) const;
-            Vector2D operator/(const Vector2D& rhs) const;
-            Vector2D operator/(const Float& rhs) const;
+            Vector3D operator+(const Vector3D& rhs) const;
+            Vector3D operator-(const Vector3D& rhs) const;
+            Vector3D operator*(const Vector3D& rhs) const;
+            Vector3D operator*(const Float& rhs) const;
+            Vector3D operator/(const Vector3D& rhs) const;
+            Vector3D operator/(const Float& rhs) const;
 
-            Vector2D& operator+=(const Vector2D& rhs);
-            Vector2D& operator-=(const Vector2D& rhs);
-            Vector2D& operator*=(const Vector2D& rhs);
-            Vector2D& operator/=(const Vector2D& rhs);
+            Vector3D& operator+=(const Vector3D& rhs);
+            Vector3D& operator-=(const Vector3D& rhs);
+            Vector3D& operator*=(const Vector3D& rhs);
+            Vector3D& operator/=(const Vector3D& rhs);
+
         };
     }
 }
