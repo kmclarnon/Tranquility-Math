@@ -51,6 +51,7 @@ namespace Tranquility
 			Point3D operator/(const Float& rhs)     const;
 
 			bool operator==(const Point3D& rhs)     const;
+            bool operator!=(const Point3D& rhs)     const;
 
 			Point3D& operator+=(const Point3D& rhs);
 			Point3D& operator-=(const Point3D& rhs);

@@ -94,5 +94,10 @@ namespace Tranquility
         {
             return a == rhs.a && b == rhs.b;
         }
+
+        bool Dual::operator!=(const Dual& rhs) const
+        {
+            return (a != rhs.a) || (b != rhs.b);
+        }
     }
 }

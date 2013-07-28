@@ -52,6 +52,7 @@ namespace Tranquility
             Dual& operator/=(const Dual& rhs);
 
             bool operator==(const Dual& rhs)    const;
+            bool operator!=(const Dual& rhs)    const;
 		};
 	}
 }

@@ -79,6 +79,9 @@ namespace Tranquility
             bool operator==(const Float& rhs)   const;
             bool operator==(const float rhs)    const;
             bool operator==(const int rhs)      const;
+            bool operator!=(const Float& rhs)   const;
+            bool operator!=(const float rhs)    const;
+            bool operator!=(const int rhs)      const;
             bool operator<(const Float& rhs)    const;
             bool operator<(const float rhs)     const;
             bool operator<(const int rhs)       const;

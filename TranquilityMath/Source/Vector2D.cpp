@@ -53,6 +53,11 @@ namespace Tranquility
             return x == rhs.x && y == rhs.y;
         }
 
+        bool Vector2D::operator!=(const Vector2D& rhs) const
+        {
+            return x != rhs.x || y != rhs.y;
+        }
+
         Vector2D Vector2D::operator+(const Vector2D& rhs) const
         {
             return Vector2D(x + rhs.x, y + rhs.y);

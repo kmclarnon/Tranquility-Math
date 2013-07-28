@@ -80,6 +80,11 @@ namespace Tranquility
 		{
 			return (x == rhs.x) && (y == rhs.y);
 		}
+
+        bool Point2D::operator!=(const Point2D& rhs) const
+        {
+            return (x != rhs.x) || (y != rhs.y);
+        }
 		
 		Point2D& Point2D::operator+=(const Point2D& rhs)
 		{

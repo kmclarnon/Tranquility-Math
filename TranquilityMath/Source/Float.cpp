@@ -115,20 +115,20 @@ namespace Tranquility
 			return Float(val / (float)rhs);
 		}
 
-	        Float Float::operator^(const Float& rhs) const
-	        {
-	            return pow(val, rhs.val);
-	        }
-	
-	        Float Float::operator^(const float rhs) const
-	        {
-	            return pow(val, rhs);
-	        }
-	
-	        Float Float::operator^(const int rhs) const
-	        {
-	            return pow(val, rhs);
-	        }
+        Float Float::operator^(const Float& rhs) const
+        {
+            return pow(val, rhs.val);
+        }
+
+        Float Float::operator^(const float rhs) const
+        {
+            return pow(val, rhs);
+        }
+
+        Float Float::operator^(const int rhs) const
+        {
+            return pow(val, rhs);
+        }
 
 		Float& Float::operator+=(const Float& rhs)
 		{
@@ -216,6 +216,21 @@ namespace Tranquility
 		{
 			return (val - (float)rhs) < FLOAT_EPSILON;
 		}
+
+        bool Float::operator!=(const Float& rhs) const
+        {
+            return (val - rhs.val) >= FLOAT_EPSILON;
+        }
+
+        bool Float::operator!=(const float rhs) const
+        {
+            return (val - rhs) >= FLOAT_EPSILON;
+        }
+
+        bool Float::operator!=(const int rhs) const
+        {
+            return (val - (float)rhs) >= FLOAT_EPSILON;
+        }
 
 		bool Float::operator<(const Float& rhs) const
 		{
