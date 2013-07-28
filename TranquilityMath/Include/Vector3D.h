@@ -44,6 +44,12 @@ namespace Tranquility
             Vector3D(Point3D p);
             Vector3D();
 
+            // Functions
+            Float magnitude() const;
+            Float sqrMagnitude() const;
+            Vector3D normalize() const;
+
+            // Operators
             Vector3D& operator=(const Vector3D& rhs);
             Vector3D& operator-(void);
 

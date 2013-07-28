@@ -44,6 +44,12 @@ namespace Tranquility
             Vector2D(Point2D p);
             Vector2D();
 
+            // Functions
+            Float magnitude() const;
+            Float sqrMagnitude() const;
+            Vector2D normalize() const;
+
+            // Operators
             Vector2D& operator=(const Vector2D& rhs);
             Vector2D& operator-(void);
 

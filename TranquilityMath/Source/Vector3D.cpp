@@ -36,6 +36,22 @@ namespace Tranquility
         Vector3D::Vector3D(Point3D p) : x(p.x), y(p.y), z(p.z) {}
         Vector3D::Vector3D() : x(0), y(0), z(0) {}
 
+        Float Vector3D::magnitude() const
+        {
+            return (x.sqr() + y.sqr() + z.sqr()).sqrt();
+        }
+
+        Float Vector3D::sqrMagnitude() const
+        {
+            return x.sqr() + y.sqr() + z.sqr();
+        }
+
+        Vector3D Vector3D::normalize() const
+        {
+            Float mag = this->magnitude();
+            return Vector3D(x / mag, y / mag, z / mag);
+        }
+
         Vector3D& Vector3D::operator=(const Vector3D& rhs)
         {
             x = rhs.x;

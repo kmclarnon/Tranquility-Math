@@ -36,6 +36,22 @@ namespace Tranquility
         Vector2D::Vector2D(Point2D p) : x(p.x), y(p.y) {}
         Vector2D::Vector2D() : x(0), y(0) {}
 
+        Float Vector2D::magnitude() const
+        {
+            return (x.sqr() + y.sqr()).sqrt();
+        }
+
+        Float Vector2D::sqrMagnitude() const
+        {
+            return x.sqr() + y.sqr();
+        }
+
+        Vector2D Vector2D::normalize() const
+        {
+            Float mag = this->magnitude();
+            return Vector2D(x / mag, y / mag);
+        }
+
         Vector2D& Vector2D::operator=(const Vector2D& rhs)
         {
             x = rhs.x;
