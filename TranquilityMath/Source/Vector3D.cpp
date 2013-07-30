@@ -38,7 +38,7 @@ namespace Tranquility
 
         Float Vector3D::magnitude() const
         {
-            return (x.sqr() + y.sqr() + z.sqr()).sqrt();
+            return sqrMagnitude().sqrt();
         }
 
         Float Vector3D::sqrMagnitude() const
