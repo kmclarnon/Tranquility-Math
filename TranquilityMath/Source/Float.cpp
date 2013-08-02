@@ -303,5 +303,25 @@ namespace Tranquility
 		{
 			return ((*this) > rhs) || ((*this) == rhs);
 		}
+
+        Float operator-(const float f1, const Float& f2)
+        {
+            return Float(f1 - f2.val);
+        }
+
+        Float operator+(const float f1, const Float& f2)
+        {
+            return f2 + f1;
+        }
+
+        Float operator*(const float f1, const Float& f2)
+        {
+            return f2 * f1;
+        }
+
+        Float operator/(const float f1, const Float& f2)
+        {
+            return Float(f1 / f2.val);
+        }
 	}
 }

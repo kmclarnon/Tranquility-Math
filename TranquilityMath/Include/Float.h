@@ -101,6 +101,11 @@ namespace Tranquility
             bool operator>=(const float rhs)    const;
             bool operator>=(const int rhs)      const;
         };
+
+        Float operator-(const float f1, const Float& f2);
+        Float operator+(const float f1, const Float& f2);
+        Float operator*(const float f1, const Float& f2);
+        Float operator/(const float f1, const Float& f2);
     }
 }
 
