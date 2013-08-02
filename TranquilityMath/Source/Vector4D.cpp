@@ -61,6 +61,11 @@ namespace Tranquility
             return Quaternion(w, x, y, z);
         }
 
+        Vector4D Vector4D::lerp(const Vector4D& v1, const Vector4D& v2, Float alpha)
+        {
+            return v1 * alpha + v2 * (1.0f - alpha);
+        }
+
         // Operators
         Vector4D& Vector4D::operator=(const Vector4D& rhs)
         {

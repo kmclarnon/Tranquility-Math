@@ -57,6 +57,11 @@ namespace Tranquility
             return (x * v.x + y * v.y + z * v.z);
         }
 
+        Vector3D Vector3D::lerp(const Vector3D& v1, const Vector3D& v2, Float alpha)
+        {
+            return v1 * alpha + v2 * (1.0f - alpha);
+        }
+
         Vector3D& Vector3D::operator=(const Vector3D& rhs)
         {
             x = rhs.x;

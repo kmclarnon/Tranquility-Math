@@ -49,6 +49,7 @@ namespace Tranquility
             Float sqrMagnitude() const;
             Vector3D normalize() const;
             Float dot(const Vector3D& v) const;
+            static Vector3D lerp(const Vector3D& v1, const Vector3D& v2, Float alpha);
 
             // Operators
             Vector3D& operator=(const Vector3D& rhs);

@@ -57,6 +57,11 @@ namespace Tranquility
             return (x * v.x + y * v.y);
         }
 
+        static Vector2D lerp(const Vector2D& v1, const Vector2D& v2, Float alpha)
+        {
+            return v1 * alpha + v2 * (1.0f - alpha);
+        }
+
         Vector2D& Vector2D::operator=(const Vector2D& rhs)
         {
             x = rhs.x;

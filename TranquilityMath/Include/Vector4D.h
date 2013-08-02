@@ -48,6 +48,7 @@ namespace Tranquility
             Vector4D normalize() const;
             Float dot(const Vector4D& v) const;
             Quaternion toQuat() const;
+            static Vector4D lerp(const Vector4D& v1, const Vector4D& v2, Float alpha);
 
             // Operators
             Vector4D& operator=(const Vector4D& rhs);
