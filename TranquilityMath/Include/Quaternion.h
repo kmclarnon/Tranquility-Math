@@ -40,6 +40,7 @@ namespace Tranquility
             Float w, x, y, z;
 
             Quaternion(Float w, Float x, Float y, Float z);
+            Quaternion(Vector4D v);
             Quaternion(Float w, Vector3D v);
             Quaternion();
 
@@ -48,6 +49,7 @@ namespace Tranquility
             Float sqrMagnitude() const;
             Quaternion normalize() const;
             Vector4D toVect() const;
+            static Quaternion lerp(const Quaternion& q1, const Quaternion& q2, Float alpha);
 
             // Operators
             Quaternion& operator=(const Quaternion& rhs);

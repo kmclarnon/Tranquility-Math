@@ -33,6 +33,7 @@ namespace Tranquility
     namespace Math
     {
         Quaternion::Quaternion(Float w, Float x, Float y, Float z) : w(w), x(x), y(y), z(z) {}
+        Quaternion::Quaternion(Vector4D v) : w(v.w), x(v.x), y(v.y), z(v.z) {}
         Quaternion::Quaternion(Float w, Vector3D v) : w(w), x(v.x), y(v.y), z(v.z) {}
         Quaternion::Quaternion() : w(0), x(0), y(0), z(0) {}
 
@@ -126,6 +127,11 @@ namespace Tranquility
             y = w * rhs.y - x * rhs.z + y * rhs.w + z * rhs.x;
             z = w * rhs.z + x * rhs.y - y * rhs.x + z * rhs.w;
             return (*this);
+        }
+
+        static Quaternion lerp(const Quaternion& q1, const Quaternion& q2, Float alpha)
+        {
+            return Quaternion(Vector4D::lerp(q1.toVect(), q2.toVect(), alpha).normalize());
         }
     }
 }
