@@ -47,6 +47,7 @@ namespace Tranquility
             Float magnitude() const;
             Float sqrMagnitude() const;
             Quaternion normalize() const;
+            Vector4D toVect() const;
 
             // Operators
             Quaternion& operator=(const Quaternion& rhs);

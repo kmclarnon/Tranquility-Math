@@ -26,6 +26,7 @@ Author: Kevin McLarnon
 */
 
 #include "Quaternion.h"
+#include "Vector4D.h"
 
 namespace Tranquility
 {
@@ -50,6 +51,11 @@ namespace Tranquility
         {
             Float mag = magnitude();
             return Quaternion(w / mag, x / mag, y / mag, z / mag);
+        }
+
+        Vector4D Quaternion::toVect() const
+        {
+            return Vector4D(w, x, y, z);
         }
 
         // Operators
